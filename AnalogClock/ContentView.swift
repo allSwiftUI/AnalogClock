@@ -53,13 +53,13 @@ struct ContentView: View {
                     .offset(x: 0, y: 50)
             
                 // Display the minutes
-                ShowMinutes(minutes: Double(currentDate.minutes))
+                ShowMinutes(minutes: currentDate.minutes)
                 
                 // Display the hours
-                ShowHours(hours: Double(currentDate.hours))
+                ShowHours(hours: currentDate.hours, minutes: currentDate.minutes)
                 
                 // Display the seconds
-                ShowSeconds(seconds: Double(currentDate.seconds))
+                ShowSeconds(seconds: currentDate.seconds)
                     
             }
             .onReceive(timer, perform: { dateTime in
@@ -86,7 +86,7 @@ struct Sphere: View {
 // MARK: - ShowSeconds
 /// View to represent and show the seconds on the clock
 struct ShowSeconds: View {
-    var seconds: Double
+    var seconds: Int
     
     var body: some View {
         ZStack {
@@ -95,10 +95,10 @@ struct ShowSeconds: View {
                 .frame(width: 8, height: 8, alignment: .center)
             Rectangle()
                 .fill(Color(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)))
-                .position(x: 15, y: 1)
-                .frame(width: 130, height: 2, alignment: .center)
+                .position(x: 1, y: 15)
+                .frame(width: 2, height: 130, alignment: .center)
         }
-        .rotationEffect(Angle(degrees: seconds * 6 + 90))
+        .rotationEffect(Angle(degrees: Double(seconds) * 6))
         //.animation(.linear(duration: 1.0))
     }
 }
@@ -106,7 +106,7 @@ struct ShowSeconds: View {
 // MARK: - ShowMinutes
 /// View to represent and show the minutes on the clock
 struct ShowMinutes: View {
-    var minutes: Double
+    var minutes: Int
     let color: Color = Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1))
     
     var body: some View {
@@ -117,17 +117,18 @@ struct ShowMinutes: View {
             Rectangle()
                 .fill(color)
                 .cornerRadius(4.0)
-                .position(x: -8, y: 2)
-                .frame(width: 110, height: 4, alignment: .center)
+                .position(x: 2, y: -8)
+                .frame(width: 4, height: 110, alignment: .center)
         }
-        .rotationEffect(Angle(degrees: minutes * 6 + 90))
+        .rotationEffect(Angle(degrees: Double(minutes) * 6))
     }
 }
 
 // MARK: - ShowHours
 /// View to represent and show the hours on the clock
 struct ShowHours: View {
-    var hours: Double
+    var hours: Int
+    var minutes: Int
     let color: Color = Color(#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
     
     var body: some View {
@@ -138,10 +139,10 @@ struct ShowHours: View {
             Rectangle()
                 .fill(color)
                 .cornerRadius(4.0)
-                .position(x: -8, y: 2)
-                .frame(width: 90, height: 4, alignment: .center)
+                .position(x: 2, y: -8)
+                .frame(width: 4, height: 90, alignment: .center)
         }
-        .rotationEffect(Angle(degrees: hours * 30 + 90))
+        .rotationEffect(Angle(degrees: Double(hours * 30) +  Double(minutes) * 0.49))
     }
 }
 
