@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200F505A2526327200EFC1D5 /* analog_clock_201001.gif in Resources */ = {isa = PBXBuildFile; fileRef = 200F50592526327200EFC1D5 /* analog_clock_201001.gif */; };
 		20355607251E2411005F8AB5 /* AnalogClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20355606251E2411005F8AB5 /* AnalogClockApp.swift */; };
 		20355609251E2411005F8AB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20355608251E2411005F8AB5 /* ContentView.swift */; };
 		2035560B251E2412005F8AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2035560A251E2412005F8AB5 /* Assets.xcassets */; };
 		2035560E251E2412005F8AB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2035560D251E2412005F8AB5 /* Preview Assets.xcassets */; };
-		205752442526240F00695A55 /* screenshot_201001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 205752432526240F00695A55 /* screenshot_201001.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		200F50592526327200EFC1D5 /* analog_clock_201001.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = analog_clock_201001.gif; sourceTree = "<group>"; };
 		20355603251E2411005F8AB5 /* AnalogClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalogClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20355606251E2411005F8AB5 /* AnalogClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogClockApp.swift; sourceTree = "<group>"; };
 		20355608251E2411005F8AB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2035560A251E2412005F8AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2035560D251E2412005F8AB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2035560F251E2412005F8AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		205752432526240F00695A55 /* screenshot_201001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot_201001.jpg; sourceTree = "<group>"; };
 		20742B712523D569009DA982 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				20742B712523D569009DA982 /* README.md */,
-				205752432526240F00695A55 /* screenshot_201001.jpg */,
+				200F50592526327200EFC1D5 /* analog_clock_201001.gif */,
 				20355605251E2411005F8AB5 /* AnalogClock */,
 				20355604251E2411005F8AB5 /* Products */,
 			);
@@ -131,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205752442526240F00695A55 /* screenshot_201001.jpg in Resources */,
 				2035560E251E2412005F8AB5 /* Preview Assets.xcassets in Resources */,
 				2035560B251E2412005F8AB5 /* Assets.xcassets in Resources */,
+				200F505A2526327200EFC1D5 /* analog_clock_201001.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
