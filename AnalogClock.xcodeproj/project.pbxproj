@@ -11,7 +11,7 @@
 		20355609251E2411005F8AB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20355608251E2411005F8AB5 /* ContentView.swift */; };
 		2035560B251E2412005F8AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2035560A251E2412005F8AB5 /* Assets.xcassets */; };
 		2035560E251E2412005F8AB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2035560D251E2412005F8AB5 /* Preview Assets.xcassets */; };
-		20742B782523D8EB009DA982 /* screenshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20742B772523D8EB009DA982 /* screenshot.jpg */; };
+		205752442526240F00695A55 /* screenshot_201001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 205752432526240F00695A55 /* screenshot_201001.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +21,8 @@
 		2035560A251E2412005F8AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2035560D251E2412005F8AB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2035560F251E2412005F8AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		205752432526240F00695A55 /* screenshot_201001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot_201001.jpg; sourceTree = "<group>"; };
 		20742B712523D569009DA982 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		20742B772523D8EB009DA982 /* screenshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = screenshot.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				20742B712523D569009DA982 /* README.md */,
-				20742B772523D8EB009DA982 /* screenshot.jpg */,
+				205752432526240F00695A55 /* screenshot_201001.jpg */,
 				20355605251E2411005F8AB5 /* AnalogClock */,
 				20355604251E2411005F8AB5 /* Products */,
 			);
@@ -131,7 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20742B782523D8EB009DA982 /* screenshot.jpg in Resources */,
+				205752442526240F00695A55 /* screenshot_201001.jpg in Resources */,
 				2035560E251E2412005F8AB5 /* Preview Assets.xcassets in Resources */,
 				2035560B251E2412005F8AB5 /* Assets.xcassets in Resources */,
 			);

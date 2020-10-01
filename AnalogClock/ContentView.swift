@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// MARK: - ContentView
 struct ContentView: View {
     
     let radius: Double = 128.0
@@ -46,11 +47,12 @@ struct ContentView: View {
                     Sphere(radius: radius, angle: step * -11)       //  4
                 }
                 
-                // Display Hour as text
-                Text("\(currentDate.hours):\(currentDate.minutes):\(currentDate.seconds)")
+                // Display Hour as text in format "00:00:00"
+                Text("\(currentDate.hours < 10 ? "0":"")\(currentDate.hours):\(currentDate.minutes < 10 ? "0":"")\(currentDate.minutes):\(currentDate.seconds < 10 ? "0":"")\(currentDate.seconds)")
                     .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 6.19091179e-06, green: 0.5897980332, blue: 1, alpha: 0.4950985033)))
-                    .offset(x: 0, y: 50)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)))
+                    .offset(x: 0, y: 70)
             
                 // Display the minutes
                 ShowMinutes(minutes: currentDate.minutes)
@@ -119,6 +121,11 @@ struct ShowMinutes: View {
                 .cornerRadius(4.0)
                 .position(x: 2, y: -8)
                 .frame(width: 4, height: 110, alignment: .center)
+            Rectangle()
+                .fill(color)
+                .cornerRadius(10.0)
+                .position(x: 5.0, y: -20)
+                .frame(width: 10, height: 98, alignment: .center)
         }
         .rotationEffect(Angle(degrees: Double(minutes) * 6))
     }
@@ -141,6 +148,11 @@ struct ShowHours: View {
                 .cornerRadius(4.0)
                 .position(x: 2, y: -8)
                 .frame(width: 4, height: 90, alignment: .center)
+            Rectangle()
+                .fill(color)
+                .cornerRadius(10.0)
+                .position(x: 5.0, y: -20)
+                .frame(width: 10, height: 78, alignment: .center)
         }
         .rotationEffect(Angle(degrees: Double(hours * 30) +  Double(minutes) * 0.49))
     }
